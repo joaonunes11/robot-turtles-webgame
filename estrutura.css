@@ -1,0 +1,71 @@
+﻿.topo {
+  display: block;
+  border: 2px solid;
+  padding: 0.5%;
+  position: fixed;
+  top:92%;
+  left: 90%;
+}
+
+.logo{
+  max-width: 40%;
+}
+
+video{
+  max-width: 75%;
+}
+
+.imgMed {
+  width: 65%;
+  display: block;
+  margin: auto;
+}
+
+.imgPeq {
+  width: 35%;
+  display: block;
+  margin: auto;
+}
+
+.imgpeq {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+.form {
+  display: block;
+  height: 768px;
+  width: 55%;
+  margin: 2% auto
+}
+
+.imgCartas {
+  width: 25%;
+  display: inline-block;
+  margin: 1%;
+}
+
+form {
+  margin:0 auto;
+  width:300px
+}
+
+button {
+  padding:10px
+}
+label {
+  cursor:pointer
+}
+#form-switch {
+  display:none
+}
+#register-form {
+  display:none
+}
+#form-switch:checked~#register-form {
+  display:block
+}
+#form-switch:checked~#login-form {
+  display:none
+}

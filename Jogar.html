@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Jogar | Robot Turtles</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="estrutura.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"> </script>
+    <script charset="utf-8" src="jQueryCode.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script charset="utf-8" src="jogo.js"> </script>
+  </head>
+  <body class="w3-container w3-padding w3-margin w3-backgound ">
+    <header id="header">
+      <div class="w3-container w3-center">
+        <img src="Imagens/logo.png" alt="Logótipo - Robot Turtles" class="w3-image " style="width:40%">
+      </div>
+      <div class="w3-bar w3-theme w3-margin" id="myTopnav">
+        <a href="PaginaInicial.html" class="w3-bar-item w3-button w3-mobile"> <i class="fa fa-home"></i> Página
+          Inicial</a>
+        <a href="História.html" class="w3-bar-item w3-button w3-mobile">História</a>
+        <a href="Comosejoga.html" class="w3-bar-item w3-button w3-mobile">Como se joga?</a>
+        <a href="Regras.html" class="w3-bar-item w3-button w3-mobile">Regras</a>
+        <a href="Jogar.html" class="w3-bar-item w3-button w3-mobile w3-theme-action">Jogar</a>
+        <a href="FAQs.html" class="w3-bar-item w3-button w3-mobile">FAQs</a>
+        <a href="Ajuda.html" class="w3-bar-item w3-button w3-mobile">Ajuda</a>
+        <input type="text" name="Pesquisa" placeholder="Pesquisar..." class="w3-input w3-theme-d2">
+      </div>
+    </header>
+      <div class="w3-row w3-mobile w3-margin">
+        <h2 class="w3-rest w3-text-theme bold">Jogo</h2>
+      </div>
+      <div class="w3-row w3-mobile w3-margin">
+        <em id="ganhou"></em>
+        <div><input class="w3-btn w3-theme w3-mobile w3-margin" type="button" value="Novo Jogo" id="novoJogo">
+        </div>
+        <div class="w3-twothird w3-mobile"  value="1" id="jogo">
+
+        </div>
+        <div class="w3-rest w3-mobile" id="cartas">
+          <img src="Imagens/cartaEsq.png" alt="Virar à esquerda" class="w3-responsive imgCartas" id="esquerda">
+          <img src="Imagens/cartaFrente.png" alt="Andar em Frente" class="w3-responsive imgCartas" id="andar">
+          <img src="Imagens/cartaDir.png" alt="Virar à direita" class="w3-responsive imgCartas" id="direita">
+          <img src="Imagens/cartaBug.png" alt="Bug" class="w3-responsive imgCartas" id="bug">
+        </div>
+      </div>
+       
+  <div id="formsNovos">
+    <input type='checkbox' class="w3-btn w3-theme w3-mobile w3-margin" id='form-switch'>
+    <form id='login-form' action="" method='post'>
+       <h2 class="w3-rest w3-text-theme bold">Login</h2>
+       <label for="nJogadores" class="w3-btn w3-theme w3-mobile w3-margin">NºJog. (1-4):</label>
+       <input type="number" class="w3-btn w3-theme w3-mobile w3-margin" min="1" max="4" value="1" name="nJogadores" id="nJogadores" required>
+       <label for="tamTabuleiro" class="w3-btn w3-theme w3-mobile w3-margin">Nº Tabuleiro. <br>
+         (8-10-12-14):</label>
+       <input type="number" class="w3-btn w3-theme w3-mobile w3-margin" min="8" max="14" step="2" value="8" name="tamTabuleiro" id="tamTabuleiro" required>
+       <input type="text" class="w3-btn w3-theme w3-mobile w3-margin" placeholder="Username" id="username" required>
+       <input type="password" class="w3-btn w3-theme w3-mobile w3-margin" placeholder="Password" id="password" required>
+       <em id="erroPasswords"></em>
+       <button class="w3-btn w3-theme w3-mobile w3-margin" type='button' id="login">Login</button>
+       <label for='form-switch' class="w3-btn w3-theme w3-mobile w3-margin" id="registarFake"><span>Registar</span></label>
+    </form>
+     <form id='register-form' action="" method='post'>
+       <h2 class="w3-rest w3-text-theme bold">Registar</h2>
+       <input type="text" class="w3-btn w3-theme w3-mobile w3-margin" placeholder="Username"id="nome" required>
+       <input type="email" class="w3-btn w3-theme w3-mobile w3-margin" placeholder="Email" id="email" required>
+       <input type="password" class="w3-btn w3-theme w3-mobile w3-margin" placeholder="Password" id="passwordRegist" required>
+      <input type="password" class="w3-btn w3-theme w3-mobile w3-margin" placeholder="Re Password" required>
+      <button class="w3-btn w3-theme w3-mobile w3-margin" type='button' id="registar">Registar</button>
+       <label for='form-switch' class="w3-btn w3-theme w3-mobile w3-margin">Fazer Login!</label>
+     </form>
+  </div>
+     <div class="topo w3-backgound w3-border-theme w3-text-theme">
+       <a href="#header">Topo</a>
+     </div>
+   </body>
+</html>
